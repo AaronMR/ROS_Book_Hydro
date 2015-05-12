@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <launch>
 	<node pkg="turtlesim" type="turtlesim_node" name="sim"/>
-	<node pkg="chapter4" type="example1" name="example1" />
+	<node pkg="chapter4_tutorials" type="c4_example1" name="c4_example1" />
 	<param name="axis_linear" value="1" type="int" />
 	<param name="axis_angular" value="0" type="int" />
 	<node respawn="true" pkg="joy" type="joy_node" name="joy_node">
