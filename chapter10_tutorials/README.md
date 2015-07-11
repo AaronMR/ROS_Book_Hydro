@@ -8,7 +8,7 @@
 roslaunch rosbook_arm_moveit_config demo.launch
 ```
 
-[![rosbook_arm_moveit_no_controllers.png](https://bitbucket.org/repo/RanEdE/images/1306052136-rosbook_arm_moveit_no_controllers.png)](http://youtu.be/aAihbFjSwBo)
+[![rosbook_arm_moveit_no_controllers.png](https://raw.githubusercontent.com/AaronMR/ROS_Book_Hydro/master/chapter10_tutorials/images/rosbook_arm_moveit_no_controllers.png)](http://youtu.be/aAihbFjSwBo)
 
 * For a version using the simulated model of the arm:
 
@@ -17,7 +17,7 @@ roslaunch rosbook_arm_gazebo rosbook_arm_empty_world.launch
 roslaunch rosbook_arm_moveit_config moveit_rviz.launch config:=true
 ```
 
-[![rosbook_arm_moveit.png](https://bitbucket.org/repo/RanEdE/images/4112035385-rosbook_arm_moveit.png)](https://youtu.be/gZJDvElwqg0)
+[![rosbook_arm_moveit.png](https://raw.githubusercontent.com/AaronMR/ROS_Book_Hydro/master/chapter10_tutorials/images/rosbook_arm_moveit.png)](https://youtu.be/gZJDvElwqg0)
 
 # Pick & Place #
 
