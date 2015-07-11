@@ -4,8 +4,7 @@
 
 * For a kinematic version (very fast) without controllers:
 
-```
-#!bash
+``` bash
 roslaunch rosbook_arm_moveit_config demo.launch
 ```
 
@@ -13,8 +12,7 @@ roslaunch rosbook_arm_moveit_config demo.launch
 
 * For a version using the simulated model of the arm:
 
-```
-#!bash
+``` bash
 roslaunch rosbook_arm_gazebo rosbook_arm_empty_world.launch
 roslaunch rosbook_arm_moveit_config moveit_rviz.launch config:=true
 ```
@@ -25,8 +23,7 @@ roslaunch rosbook_arm_moveit_config moveit_rviz.launch config:=true
 
 Run the simulated model of the arm on the grasping world:
 
-```
-#!bash
+``` bash
 roslaunch rosbook_arm_gazebo rosbook_arm_grasping_world.launch
 roslaunch rosbook_arm_moveit_config moveit_rviz.launch config:=true
 roslaunch rosbook_arm_pick_and_place grasp_generator_server.launch
@@ -37,15 +34,14 @@ This [video](http://youtu.be/GR0pmhgVq70) shows the grasping world, which also
 spawns the arm with an RGB-D sensor on top of it.
 
 Note that the objects in the planning scene has been created manually, without
-perception, by using their dimensions from the SDF files in ~/.gazebo/models
-or the meshes/<model>.dae in meshlab as with the coke_can model.
+perception, by using their dimensions from the SDF files in `~/.gazebo/models`
+or the `meshes/<model>.dae` in meshlab as with the coke_can model.
 
 ## Demo mode ##
 
 Run the following instead:
 
-```
-#!bash
+``` bash
 roslaunch rosbook_arm_moveit_config demo.launch
 roslaunch rosbook_arm_pick_and_place grasp_generator_server.launch
 rosrun rosbook_arm_pick_and_place pick_and_place.py
