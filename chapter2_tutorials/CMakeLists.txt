@@ -127,7 +127,7 @@ add_executable(example2_b src/example2_b.cpp)
 add_executable(example3_a src/example3_a.cpp)
 add_executable(example3_b src/example3_b.cpp)
 
-add_executable(example4_0 src/example4.cpp)
+add_executable(example4 src/example4.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -142,7 +142,7 @@ add_dependencies(example2_b chapter2_tutorials_generate_messages_cpp)
 add_dependencies(example3_a chapter2_tutorials_generate_messages_cpp)
 add_dependencies(example3_b chapter2_tutorials_generate_messages_cpp)
 
-add_dependencies(example4_0 chapter2_tutorials_gencfg)
+add_dependencies(example4 chapter2_tutorials_gencfg)
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(chapter2_tutorials_node
 #   ${catkin_LIBRARIES}
@@ -157,7 +157,7 @@ target_link_libraries(example2_b ${catkin_LIBRARIES})
 target_link_libraries(example3_a ${catkin_LIBRARIES})
 target_link_libraries(example3_b ${catkin_LIBRARIES})
 
-target_link_libraries(example4_0 ${catkin_LIBRARIES})
+target_link_libraries(example4 ${catkin_LIBRARIES})
 
 #############
 ## Install ##
