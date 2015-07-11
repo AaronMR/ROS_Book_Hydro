@@ -25,6 +25,7 @@ public:
     {
       ROS_ERROR_STREAM( "Failed to open camera device!" );
       ros::shutdown();
+      return;
     }
 
     nh.param<int>( "fps", fps, DEFAULT_FPS );
