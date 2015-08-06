@@ -118,46 +118,46 @@ include_directories(
 
 ## Declare a cpp executable
 # add_executable(chapter2_tutorials_node src/chapter2_tutorials_node.cpp)
-add_executable(example1_a src/example1_a.cpp)
-add_executable(example1_b src/example1_b.cpp)
+add_executable(chap2_example1_a src/example1_a.cpp)
+add_executable(chap2_example1_b src/example1_b.cpp)
 
-add_executable(example2_a src/example2_a.cpp)
-add_executable(example2_b src/example2_b.cpp)
+add_executable(chap2_example2_a src/example2_a.cpp)
+add_executable(chap2_example2_b src/example2_b.cpp)
 
-add_executable(example3_a src/example3_a.cpp)
-add_executable(example3_b src/example3_b.cpp)
+add_executable(chap2_example3_a src/example3_a.cpp)
+add_executable(chap2_example3_b src/example3_b.cpp)
 
-add_executable(example4 src/example4.cpp)
+add_executable(chap2_example4 src/example4.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(chapter2_tutorials_node chapter2_tutorials_generate_messages_cpp)
 
-add_dependencies(example1_a chapter2_tutorials_generate_messages_cpp)
-add_dependencies(example1_b chapter2_tutorials_generate_messages_cpp)
+add_dependencies(chap2_example1_a chapter2_tutorials_generate_messages_cpp)
+add_dependencies(chap2_example1_b chapter2_tutorials_generate_messages_cpp)
 
-add_dependencies(example2_a chapter2_tutorials_generate_messages_cpp)
-add_dependencies(example2_b chapter2_tutorials_generate_messages_cpp)
+add_dependencies(chap2_example2_a chapter2_tutorials_generate_messages_cpp)
+add_dependencies(chap2_example2_b chapter2_tutorials_generate_messages_cpp)
 
-add_dependencies(example3_a chapter2_tutorials_generate_messages_cpp)
-add_dependencies(example3_b chapter2_tutorials_generate_messages_cpp)
+add_dependencies(chap2_example3_a chapter2_tutorials_generate_messages_cpp)
+add_dependencies(chap2_example3_b chapter2_tutorials_generate_messages_cpp)
 
-add_dependencies(example4 chapter2_tutorials_gencfg)
+add_dependencies(chap2_example4 chapter2_tutorials_gencfg)
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(chapter2_tutorials_node
 #   ${catkin_LIBRARIES}
 # )
 
-target_link_libraries(example1_a ${catkin_LIBRARIES})
-target_link_libraries(example1_b ${catkin_LIBRARIES})
+target_link_libraries(chap2_example1_a ${catkin_LIBRARIES})
+target_link_libraries(chap2_example1_b ${catkin_LIBRARIES})
 
-target_link_libraries(example2_a ${catkin_LIBRARIES})
-target_link_libraries(example2_b ${catkin_LIBRARIES})
+target_link_libraries(chap2_example2_a ${catkin_LIBRARIES})
+target_link_libraries(chap2_example2_b ${catkin_LIBRARIES})
 
-target_link_libraries(example3_a ${catkin_LIBRARIES})
-target_link_libraries(example3_b ${catkin_LIBRARIES})
+target_link_libraries(chap2_example3_a ${catkin_LIBRARIES})
+target_link_libraries(chap2_example3_b ${catkin_LIBRARIES})
 
-target_link_libraries(example4 ${catkin_LIBRARIES})
+target_link_libraries(chap2_example4 ${catkin_LIBRARIES})
 
 #############
 ## Install ##

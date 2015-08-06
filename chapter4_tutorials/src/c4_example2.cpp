@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include "std_msgs/String.h"
 #include <sensor_msgs/LaserScan.h>
-#include<stdio.h>
+#include <stdio.h>
 
 using namespace std;
 class Scan2{
