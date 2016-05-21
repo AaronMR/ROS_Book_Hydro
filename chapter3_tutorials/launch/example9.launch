@@ -4,5 +4,8 @@
   <!-- Example 9 -->
   <node pkg="chapter3_tutorials" type="example9" name="example9"
         output="screen"/>
+  <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find chapter3_tutorials)/config/example9.rviz"/>
+
 </launch>
 
